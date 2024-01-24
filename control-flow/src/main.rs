@@ -2,6 +2,7 @@ fn main() {
     vote();
     loop_counter();
     condition();
+    match_checking();
 }
 fn condition(){
     let condition = true ;
@@ -30,6 +31,20 @@ fn loop_counter() {
     println!("The value of counter is : {result}");
 }
 
-// Multiple Loops
+// Match
+
+fn match_checking() {
+    let tshirt_width = 20;
+    let tshirt_size = match tshirt_width {
+        16 => "S",// small 16
+        17 | 18 => "M" ,
+        19..= 21 => "L",
+        22 => "XL",
+        _=> "Not Available",
+    };
+    println!("{}" , tshirt_size);
+}
+
+
 
 
