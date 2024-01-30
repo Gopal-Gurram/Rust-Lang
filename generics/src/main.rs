@@ -72,3 +72,18 @@ fn main(){
 
 }
 
+//Usuage of result type
+fn get_word_count_from_file(file_name: &str) -> Result(u32, &str){
+    return Err("File not found");
+    ok(word_count)
+}
+fn main(){
+    let mut file_name="file_a";
+    match get_word_count_from_file(file_name){
+        ok(i)=>println!("{}",i),
+        Err(e)=>println!("{}",e)
+    }
+}
+
+
+
